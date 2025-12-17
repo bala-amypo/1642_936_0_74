@@ -45,7 +45,7 @@ public class StudentEntity{
             this.pwd=pwd;
             this.data=date;
           }
-          public StudentEntity(Integer id,String username,String email,String pwd,Date created){
+          public StudentEntity(){
            
           }
 
