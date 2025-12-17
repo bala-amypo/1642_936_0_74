@@ -10,6 +10,7 @@ import com.example.demo.service.repository.StudentRepository;
 public class StudentServiceImpl implements StudentService{
   @Autwired StudentRepository student; //creating obj for StudentRepository to handle built in methods
   
+  @Override //we are using already declared method
   public StudentEntity postData(StudentEntity stu){
     return student.save(stu); //Here student is the obj of StudentRepository //stu is the input passed by the user in java objects form
   }
