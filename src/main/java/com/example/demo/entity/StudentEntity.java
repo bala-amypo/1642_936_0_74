@@ -24,16 +24,16 @@ public class StudentEntity{
             this.created=created;
           }
           public Integer getID(){
-            return this.id;
+            return id;
           }
           public String getUsername(){
-            return this.username;
+            return username;
           }
           public String getEmail(){
-            return this.email;
+            return email;
           }
           public String getPwd(){
-            return this.pwd;
+            return pwd;
           }
           public Date getCreated(){
             return this.created;
