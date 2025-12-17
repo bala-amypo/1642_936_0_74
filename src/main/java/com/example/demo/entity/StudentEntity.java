@@ -8,6 +8,23 @@ public class StudentEntity{
           private String pwd;
           private Date created;
 
-          public Integer 
+          public void setId(Integer id){
+            this.id=id;
+          }
+          public void setUsername(String username){
+            this.username=username;
+          }
+           public void setEmail(String email){
+            this.email=email;
+          }
+           public void setPwd(String pwd){
+            this.pwd=pwd;
+          }
+          public void setCreated(Date created){
+            this.created=created;
+          }
+          public Integer getID(){
+            return this.id;
+          }
 
 }
