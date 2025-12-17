@@ -8,7 +8,7 @@ import com.example.demo.service.repository.StudentRepository;
 
 @Service  //business logic layer
 public class StudentServiceImpl implements StudentService{
-  @Autwired StudentRepository student; //creating obj for StudentRepository to handle built in methods
+  @Autowired StudentRepository student; //creating obj for StudentRepository to handle built in methods
   
   @Override //we are using already declared method
   public StudentEntity postData(StudentEntity stu){
