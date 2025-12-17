@@ -43,7 +43,7 @@ public class StudentEntity{
             this.username=username;
             this.email=email;
             this.pwd=pwd;
-            this.data=date;
+            this.created=created;
           }
           public StudentEntity(){
            
