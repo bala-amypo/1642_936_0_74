@@ -26,5 +26,27 @@ public class StudentEntity{
           public Integer getID(){
             return this.id;
           }
+          public String getUsername(){
+            return this.username;
+          }
+          public String getEmail(){
+            return this.email;
+          }
+          public String getPwd(){
+            return this.pwd;
+          }
+          public Date getCreated(){
+            return this.created;
+          }
+          public StudentEntity(Integer id,String username,String email,String pwd,Date created){
+            this.id=id;
+            this.username=username;
+            this.email=email;
+            this.pwd=pwd;
+            this.data=date;
+          }
+          public StudentEntity(Integer id,String username,String email,String pwd,Date created){
+           
+          }
 
 }
