@@ -7,14 +7,13 @@ import com.example.demo.service.StudentService;
 import com.example.demo.repository.StudentRepository;
 import java.util.List;
 
-@Service  //business logic layer
+@Service
 public class StudentServiceImpl implements StudentService{
-  @Autowired StudentRepository student; //creating obj for StudentRepository to handle built in methods
+  @Autowired StudentRepository student;
   
-  @Override //we are using already declared method
+  @Override 
   public StudentEntity postData(StudentEntity stu){
-    return student.save(stu); //Here student is the obj of StudentRepository 
-    // //stu is the input passed by the user in java objects form
+    return student.save(stu); 
   }
 
   @Override
