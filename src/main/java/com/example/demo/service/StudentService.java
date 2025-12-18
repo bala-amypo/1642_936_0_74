@@ -1,11 +1,10 @@
 package com.example.demo.service;
 
-import com.example.demo.entity.StudentEntity;
-//We should not use @Service here bcz this is an interface not a class 
-public interface StudentService{
-    //We will give method definitions in other file. We're just declaring methods here. So interface
+import com.example.demo.entity.StudentEntity;\
 
+public interface StudentService{
+   
     StudentEntity postData(StudentEntity stu);
+    List<StudentEntity> getData()
     
-    //studentEntity is return type 
 }
