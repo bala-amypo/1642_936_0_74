@@ -40,9 +40,7 @@ public class ValidationEntity{
            public void setPwd(String pwd){
             this.pwd=pwd;
           }
-          public void setCreated(int age){
-            this.age=age;
-          }
+          
           public Long getID(){
             return id;
           }
