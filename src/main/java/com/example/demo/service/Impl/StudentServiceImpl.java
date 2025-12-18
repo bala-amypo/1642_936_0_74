@@ -26,4 +26,9 @@ public class StudentServiceImpl implements StudentService{
     student.deleteById(id);
     return "User with id "+id+" deleted successfully";
   }
+
+  @Override
+  public StudentEntity getDataById(int id){
+     return student.FindById(id);
+  }
 }
