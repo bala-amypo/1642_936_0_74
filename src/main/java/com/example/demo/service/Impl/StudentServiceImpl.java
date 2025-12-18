@@ -33,7 +33,9 @@ public class StudentServiceImpl implements StudentService{
   }
 
   @Override
-  public StudentEntity putDataByID(int id){
-     
+  public StudentEntity updateData(int id,StudentEntity stu){
+     if(student.existsById(id)){
+      
+     }
   }
 }
