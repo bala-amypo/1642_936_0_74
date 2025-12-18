@@ -31,7 +31,7 @@ public class StudentController{
     return ser.deleteData(id);
    }
    
-   @GetMapping("/get1/{id}")
+   @GetMapping("/getid/{id}")
    public StudentEntity getData(@PathVariable int id){
     return ser.getDataById(id);
    }
