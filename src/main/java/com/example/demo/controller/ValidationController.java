@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PostMapping;
-// import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 // import org.springframework.web.bind.annotation.DeleteMapping;
 // import org.springframework.web.bind.annotation.PutMapping;
 import com.example.demo.entity.ValidationEntity;
@@ -33,10 +33,10 @@ public class ValidationController{
 //     return ser.deleteData(id);
 //    }
    
-//    @GetMapping("/getid/{id}")
-//    public StudentEntity getDataa(@PathVariable int id){
-//     return ser.getDataById(id);
-//    }
+   @GetMapping("/getidd/{id}")
+   public StudentEntity getDataa(@PathVariable int id){
+    return ser.getDataById(id);
+   }
 
 //    @PutMapping("/put/{id}")
 //    public StudentEntity UpdateDataByID(@PathVariable int id,@RequestBody StudentEntity stu){

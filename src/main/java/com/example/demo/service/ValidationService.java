@@ -8,6 +8,6 @@ public interface ValidationService{
     ValidationEntity postData(ValidationEntity validate);
     // List<ValidationEntity> getAllData();
     // String deleteData(long id);
-    // ValidationEntity getDataById(long id);
+    ValidationEntity getDataByIdd(long id);
     // ValidationEntity updateData(long id,ValidationEntity validate);
 }

@@ -28,10 +28,10 @@ public class ValidationServiceImpl implements ValidationService{
 //     return "User with id "+id+" deleted successfully";
 //   }
 
-//   @Override
-//   public StudentEntity getDataById(int id){
-//      return student.findById(id).orElse(null);
-//   }
+  @Override
+  public StudentEntity getDataByIdd(int id){
+     return student.findById(id);
+  }
 
 //   @Override
 //   public StudentEntity updateData(int id,StudentEntity stu){
