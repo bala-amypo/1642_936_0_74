@@ -23,7 +23,7 @@ public class ValidationEntity{
           @Size(min=2,max=6)
           @NotNull(message="Password is mandatory")
           private String pwd;
-          @Max(35);
+          @Max(35)
           @Positive
           private int age;
       
@@ -41,7 +41,7 @@ public class ValidationEntity{
             this.pwd=pwd;
           }
           public void setCreated(int age){
-            this.age=age
+            this.age=age;
           }
           public Integer getID(){
             return id;
