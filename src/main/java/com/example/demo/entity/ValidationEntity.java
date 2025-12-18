@@ -28,7 +28,7 @@ public class ValidationEntity{
           private int age;
       
 
-      public void setId(Integer id){
+          public void setId(Long id){
             this.id=id;
           }
           public void setUsername(String username){
@@ -40,8 +40,8 @@ public class ValidationEntity{
            public void setPwd(String pwd){
             this.pwd=pwd;
           }
-          public void setCreated(Date created){
-            this.created=created;
+          public void setCreated(int age){
+            this.age=age
           }
           public Integer getID(){
             return id;
@@ -57,5 +57,11 @@ public class ValidationEntity{
           }
           public int getAge(){
             return age;
+          }
 
+          public ValidationEntity(Long id,
+          @NotNull @Size(min=2,max=10,message="Username must have atleast 2 to a maximum of 10 characters") String username,
+          @Email (message="Email is not valid"),
+          @Size(max=6) @NotNull(message="Password is mandatory") String pwd;
+          )
 }
