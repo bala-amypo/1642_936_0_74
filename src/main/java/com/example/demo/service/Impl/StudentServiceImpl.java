@@ -15,4 +15,9 @@ public class StudentServiceImpl implements StudentService{
     return student.save(stu); //Here student is the obj of StudentRepository 
     // //stu is the input passed by the user in java objects form
   }
+
+  @Override
+  public List<StudentEntity> getAllData(){
+        
+  }
 }
