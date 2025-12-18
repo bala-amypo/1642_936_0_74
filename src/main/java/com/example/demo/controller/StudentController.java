@@ -24,4 +24,6 @@ public class StudentController{
         return ser.getAllData();
    }
 
+   @DeleteMapping()
+
 }
