@@ -11,14 +11,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.example.demo.entity.ValidationEntity;
 import com.example.demo.service.ValidationService;
 import java.util.List;
+import jakarta.validation.Valid;
 
 
 @RestController
 public class ValidationController{
    @Autowired ValidationService serv;
 
-   @PostMapping("/post")
-   public ValidationEntity SendData(@RequestBody ValidationEntity validate){
+   @PostMapping("/validpost")
+   public ValidationEntity SendData(@Valid @RequestBody ValidationEntity validate){
        return serv.postData(stu);
    }
 

@@ -3,17 +3,17 @@ package com.example.demo.service.Impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.entity.StudentEntity;
 import org.springframework.stereotype.Service;
-import com.example.demo.service.StudentService;
-import com.example.demo.repository.StudentRepository;
-import java.util.List;
+import com.example.demo.service.ValidationService;
+import com.example.demo.repository.ValidationRepository;
+// import java.util.List;
 
 @Service
-public class StudentServiceImpl implements StudentService{
-  @Autowired StudentRepository student;
+public class ValidationServiceImpl implements ValidationService{
+  @Autowired ValidationRepository vali;
   
   @Override 
-  public StudentEntity postData(StudentEntity stu){
-    return student.save(stu); 
+  public ValidationEntity postData(ValidationEntity val){
+    return vali.save(val); 
   }
 
 //   @Override
