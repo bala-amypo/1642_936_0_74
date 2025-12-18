@@ -4,11 +4,11 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.constraints.NotNull;
-import jakarta.persistence.constraints.Size;
-import jakarta.persistence.constraints.Email;
-import jakarta.persistence.constraints.Max;
-import jakarta.persistence.constraints.Positive;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Positive;
 
 @Entity 
 public class ValidationEntity{
@@ -43,7 +43,7 @@ public class ValidationEntity{
           public void setCreated(int age){
             this.age=age;
           }
-          public Integer getID(){
+          public Long getID(){
             return id;
           }
           public String getUsername(){
