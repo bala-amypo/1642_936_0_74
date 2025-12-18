@@ -30,7 +30,8 @@ public class StudentController{
    public String DeleteValue(@PathVariable int id){
     return ser.deleteData(id);
    }
-
+   
+   @GetMapping
    public StudentEntity getData(@PathVariable int id){
     return ser.getDataById(id);
    }
