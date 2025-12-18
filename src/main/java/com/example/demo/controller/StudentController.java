@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import com.example.demo.entity.StudentEntity;
 import com.example.demo.service.StudentService;
 import java.util.List;
@@ -38,6 +39,6 @@ public class StudentController{
 
    @PutMapping("/put/{id}")
    public StudentEntity UpdateDataByID(@PathVariable int id,@ResponseBody StudentEntity stu){
-    return ser.update
+    return ser.updateData(id,stu);
    }
 }
