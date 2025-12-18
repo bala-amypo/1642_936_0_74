@@ -7,6 +7,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.constraints.NotNull;
 import jakarta.persistence.constraints.Size;
 import jakarta.persistence.constraints.Email;
+import jakarta.persistence.constraints.Max;
+import jakarta.persistence.constraints.Positive;
 
 @Entity 
 public class ValidationEntity{
@@ -18,8 +20,11 @@ public class ValidationEntity{
           private String username;
           @Email(message="Email is not valid")
           private String email;
-          @
+          @Max(6)
+          @NotNull(message="Password is mandatory")
           private String pwd;
+          @Max(35);
+          @Positive
           private int age;
       
 
