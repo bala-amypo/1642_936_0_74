@@ -31,6 +31,8 @@ public class StudentController{
     return ser.deleteData(id);
    }
 
-   publ
+   public StudentEntity getData(@PathVariable int id){
+    return ser.getDataById(id);
+   }
 
 }
