@@ -20,12 +20,42 @@ public class ValidationEntity{
           private String username;
           @Email(message="Email is not valid")
           private String email;
-          @Max(6)
+          @Size(max=6)
           @NotNull(message="Password is mandatory")
           private String pwd;
           @Max(35);
           @Positive
           private int age;
       
+
+      public void setId(Integer id){
+            this.id=id;
+          }
+          public void setUsername(String username){
+            this.username=username;
+          }
+          public void setEmail(String email){
+            this.email=email;
+          }
+           public void setPwd(String pwd){
+            this.pwd=pwd;
+          }
+          public void setCreated(Date created){
+            this.created=created;
+          }
+          public Integer getID(){
+            return id;
+          }
+          public String getUsername(){
+            return username;
+          }
+          public String getEmail(){
+            return email;
+          }
+          public String getPwd(){
+            return pwd;
+          }
+          public int getAge(){
+            return age;
 
 }
