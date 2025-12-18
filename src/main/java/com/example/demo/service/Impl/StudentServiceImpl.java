@@ -28,7 +28,7 @@ public class StudentServiceImpl implements StudentService{
   }
 
   @Override
-  public StudentEntity getDataById(int id){
+  public StudentEntity getDataById(Integer id){
      return student.findById(id);
   }
 }
