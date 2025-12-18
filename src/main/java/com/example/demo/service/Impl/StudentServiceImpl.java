@@ -5,6 +5,7 @@ import com.example.demo.entity.StudentEntity;
 import org.springframework.stereotype.Service;
 import com.example.demo.service.StudentService;
 import com.example.demo.repository.StudentRepository;
+import java.util.List;
 
 @Service  //business logic layer
 public class StudentServiceImpl implements StudentService{
