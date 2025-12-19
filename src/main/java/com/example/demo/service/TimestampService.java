@@ -1,9 +1,9 @@
 package com.example.demo.service;
 
 import com.example.demo.entity.Timestamp;
-import java.util.List;
 
-public interface Timestamp{
+
+public interface TimestampService{
    
     Timestamp postStampData(Timestamp ts);   
 }
