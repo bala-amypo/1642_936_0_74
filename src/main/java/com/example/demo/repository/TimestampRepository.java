@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.example.demo.entity.Timestamp;
 
 @Repository
-public interface StudentRepository extends JpaRepository<StudentEntity,Integer>{
-    //Here StudentEntity is the databse name //Integer is the datatype of primary key
+public interface TimestampRepository extends JpaRepository<Timestamp,Long>{
+   
 
 }
