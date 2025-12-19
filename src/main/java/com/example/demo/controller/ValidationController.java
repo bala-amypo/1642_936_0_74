@@ -34,7 +34,7 @@ public class ValidationController{
 //    }
    
    @GetMapping("/getidd/{id}")
-   public StudentEntity getDataa(@PathVariable int id){
+   public ValidationEntity getDataa(@PathVariable int id){
     return ser.getDataByIdd(id);
    }
 
