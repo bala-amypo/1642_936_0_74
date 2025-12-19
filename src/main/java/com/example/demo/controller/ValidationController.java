@@ -35,7 +35,7 @@ public class ValidationController{
    
    @GetMapping("/getidd/{id}")
    public ValidationEntity getDataa(@PathVariable int id){
-    return serv.getDataByIdd(id).orElseThrow(()->new ValidationException(null));
+    return serv.getDataByIdd(id).orElseThrow(()->new ValidationException("Invalid Id "+id));
    }
 
 //    @PutMapping("/put/{id}")
