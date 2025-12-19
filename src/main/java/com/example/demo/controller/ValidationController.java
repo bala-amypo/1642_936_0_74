@@ -35,7 +35,7 @@ public class ValidationController{
    
    @GetMapping("/getidd/{id}")
    public ValidationEntity getDataa(@PathVariable int id){
-    return ser.getDataByIdd(id);
+    return serv.getDataByIdd(id);
    }
 
 //    @PutMapping("/put/{id}")
