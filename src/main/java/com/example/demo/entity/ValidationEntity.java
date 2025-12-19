@@ -10,9 +10,9 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Positive;
 
-import lambok.Data;
-import lambok.NoArgsConstructor;
-import lambok.FullArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.FullArgsConstructor;
 
 @Entity
 @Data
