@@ -12,6 +12,7 @@ import lambok.FullArgsConstructor;
 @Entity
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class StudentEntity{
   
           @Id
