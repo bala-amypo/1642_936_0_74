@@ -19,7 +19,7 @@ public class IdDetailsController{
 
    @PostMapping("/postId")
    public IdDetails SendIdData(@RequestBody IdDetails ts){
-       return servvi.postStampData(ts);
+       return servvi.postIdData(ts);
    }
 
 }
