@@ -34,7 +34,7 @@ public class ValidationController{
 //    }
    
    @GetMapping("/getidd/{id}")
-   public ValidationEntity getDataa(@PathVariable int id){
+   public ValidationEntity getDataa(@PathVariable Long id){
     return serv.getDataByIdd(id).orElseThrow(()->new ValidationException("Invalid Id "+id));
    }
 
