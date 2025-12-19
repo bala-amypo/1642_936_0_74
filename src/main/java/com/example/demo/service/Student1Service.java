@@ -5,6 +5,6 @@ import com.example.demo.entity.StudentDetails;
 
 public interface Student1Service{
  
-    StudentDetails postIdDataa(StudentDetails ts);
+    StudentDetails postIddData(StudentDetails ts);
 
 }
