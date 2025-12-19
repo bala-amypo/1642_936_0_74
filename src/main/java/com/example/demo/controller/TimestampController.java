@@ -18,8 +18,8 @@ public class TimestampController{
    @Autowired TimestampService servi;
 
    @PostMapping("/postTimestamp")
-   public StudentEntity SendData(@RequestBody StudentEntity stu){
-       return servi.postData(stu);
+   public Timestamp SendStampData(@RequestBody Timestamp ts){
+       return servi.postStampData(ts);
    }
 
 }
