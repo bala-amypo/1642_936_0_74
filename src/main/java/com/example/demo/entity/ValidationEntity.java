@@ -12,7 +12,7 @@ import jakarta.validation.constraints.Positive;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.FullArgsConstructor;
+import lombok.AllArgsConstructor;
 
 @Entity
 @Data
