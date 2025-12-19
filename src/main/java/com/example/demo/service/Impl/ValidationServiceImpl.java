@@ -30,7 +30,7 @@ public class ValidationServiceImpl implements ValidationService{
 
   @Override
   public ValidationEntity getDataByIdd(Long id){
-     return vali.findById(id).orElseThrow(()->new ValidationException("Invalid Id "+id));)
+     return vali.findById(id).orElseThrow(()->new ValidationException("Invalid Id "+id));
   }
 
 //   @Override
