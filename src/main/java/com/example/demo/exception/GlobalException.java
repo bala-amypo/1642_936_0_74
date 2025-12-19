@@ -5,9 +5,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class GlobalException{
     @ExceptionHandler(ValidationException.class){
         //This ValidationException has the custom error msg that has to be displayed in the UI
-        public ResponseData<String> handleValidationException(ValidationException ex){
+        public ResponseEntity<String> handleValidationException(ValidationException ex){
              //@ResponseBody convertsd java objects to json to display the response to client
-              return new ResponseBody<String>("Validation Error",ex.getMessage(),HttpStatus.BAD_GATEWAY);
+              return new ResponseEntity<String>("Validation Error",ex.getMessage(),HttpStatus.BAD_GATEWAY);
               //Which msg to display , which statuscode to display?
         }
     }
