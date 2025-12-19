@@ -6,8 +6,7 @@ import jakarta.persistence.GenerationType;
 public class StudentDetails{
     @Id
     @GeneratedValue(GenerationType.IDENTITY)
-    private String reg;
-    private String name;
-    private String address;
+    private int id;
+    private int cardNo;
 
 }

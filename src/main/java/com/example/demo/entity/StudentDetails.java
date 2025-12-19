@@ -4,9 +4,10 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 @Entity
 public class StudentDetails{
-    @Id
+ @Id
     @GeneratedValue(GenerationType.IDENTITY)
-    Long id;
-    
+    private String reg;
+    private String name;
+    private String address;
 
 }
