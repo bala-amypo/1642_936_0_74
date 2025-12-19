@@ -37,9 +37,9 @@ public class Timestamp{
 
    @PreUpdate //called upon data update in the database
    public void onUpdate(){
-    LocalDateTime now=LocalDateTime.now();
+    LocalDateTime now1=LocalDateTime.now();
     // LocalDateTime now=LocalDateTime().now();
-    this.updateAt=now;
+    this.updateAt=now1;
    }
 
 
