@@ -1,4 +1,4 @@
-package com.example.demo.entity
+package com.example.demo.entity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -13,7 +13,7 @@ import lombok.AllArgsConstructor;
 
 public class StudentDetails{
     @Id
-    @GeneratedValue(GenerationType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id;
     private int cardNo;
     private int student_id;
