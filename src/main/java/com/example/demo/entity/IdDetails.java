@@ -7,6 +7,7 @@ import jakarta.persistence.JoinColumn;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
+import jakarta.persistence.Id;
 @Entity
 @Data
 @NoArgsConstructor
