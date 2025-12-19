@@ -14,7 +14,7 @@ import lombok.AllArgsConstructor;
 public class StudentDetails{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
     private int cardNo;
     private int student_id;
 
