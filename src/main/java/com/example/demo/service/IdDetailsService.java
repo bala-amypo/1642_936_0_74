@@ -5,6 +5,6 @@ import java.util.List;
 
 public interface IdDetailsService{
    
-    IdDetails postData(IdDetails idd);
+    IdDetails postIdData(IdDetails idd);
    
 }
