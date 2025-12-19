@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 // import org.springframework.web.bind.annotation.DeleteMapping;
 // import org.springframework.web.bind.annotation.PutMapping;
 import com.example.demo.entity.StudentDetails;
-import com.example.demo.service.StudentDetailsService;
+import com.example.demo.service.Student1Service;
 // import java.util.List;
 
 
 @RestController
 public class Student1Controller{
-   @Autowired StudentsDetailsService servvi;
+   @Autowired Students1Service servvi;
 
    @PostMapping("/postId")
    public StudentDetails SendIddData(@RequestBody StudentDetails ts){
