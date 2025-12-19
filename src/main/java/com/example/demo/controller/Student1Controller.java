@@ -19,7 +19,7 @@ public class Student1Controller{
 
    @PostMapping("/postId")
    public StudentDetails SendIddData(@RequestBody StudentDetails ts){
-       return servvi.postIdDataa(ts);
+       return servvi.postIddData(ts);
    }
 
 }
