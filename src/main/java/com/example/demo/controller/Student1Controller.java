@@ -15,7 +15,7 @@ import com.example.demo.service.Student1Service;
 
 @RestController
 public class Student1Controller{
-   @Autowired Students1Service servvi;
+   @Autowired Student1Service servvi;
 
    @PostMapping("/postId")
    public StudentDetails SendIddData(@RequestBody StudentDetails ts){
