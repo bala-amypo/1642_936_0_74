@@ -10,7 +10,7 @@ import com.example.demo.repository.TimestampRepository;
 
 @Service
 public class TimestampImpl implements TimestampService{
-  @Autowired TimeStamp timer;
+  @Autowired Timestamp timer;
   
   @Override 
   public Timestamp postStampData(Timestamp ts){
