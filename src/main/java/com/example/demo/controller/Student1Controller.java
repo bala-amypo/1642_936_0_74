@@ -15,11 +15,11 @@ import com.example.demo.service.IdDetailsService;
 
 @RestController
 public class Student1Controller{
-   @Autowired IdDetailsService servvi;
+   @Autowired StudentsDetailsService servvi;
 
    @PostMapping("/postId")
-   public IdDetails SendIdData(@RequestBody IdDetails ts){
-       return servvi.postIdData(ts);
+   public StudentDetails SendIddData(@RequestBody StudentDetails ts){
+       return servvi.postIdDataa(ts);
    }
 
 }
