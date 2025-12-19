@@ -14,12 +14,12 @@ import com.example.demo.service.IdDetailsService;
 
 
 @RestController
-public class TimestampController{
-   @Autowired TimestampService servi;
+public class IdDetailsController{
+   @Autowired IdDetailsService servvi;
 
-   @PostMapping("/postTimestamp")
-   public Timestamp SendStampData(@RequestBody Timestamp ts){
-       return servi.postStampData(ts);
+   @PostMapping("/postId")
+   public IdDetails SendIdData(@RequestBody IdDetails ts){
+       return servvi.postStampData(ts);
    }
 
 }
