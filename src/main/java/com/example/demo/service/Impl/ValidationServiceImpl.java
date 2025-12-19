@@ -29,7 +29,7 @@ public class ValidationServiceImpl implements ValidationService{
 //   }
 
   @Override
-  public StudentEntity getDataByIdd(int id){
+  public ValidationEntity getDataByIdd(int id){
      return student.findById(id);
   }
 
