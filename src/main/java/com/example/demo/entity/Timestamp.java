@@ -25,9 +25,10 @@ public class Timestamp{
    private LocalDateTime createAt;
    private LocalDateTime updateAt;
    
+   LocalDateTime now=LocalDateTime.now();
    @PrePersist
    public void onCreate(){
-    LocalDateTime now=LocalDateTime.now();
+    
     //to capture time of java obj creation
     this.createAt=now;
     this.updateAt=now;
