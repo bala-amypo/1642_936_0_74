@@ -21,17 +21,24 @@ public class Timestamp{
 
    private String name;
    private String email;
-   LocalDateTime createAt;
-   LocalDateTime updateAt;
+   private LocalDateTime createAt;
+   private LocalDateTime updateAt;
    
    @PrePersist
    public void onCreate(){
     LocalDateTime now=LocalDateTime().now();
-    //now() to capture latest update
     //to capture time of java obj creation
     this.createAt=now;
     this.updateAt=now;
    }
+
+
+   @PreUpdate //called upon data update in the database
+   public void onUpdate(){
+    LocalDateTime now=LocalDateTime().now();
+    this.updateAt=now;
+   }
+
 
 
 }
