@@ -9,7 +9,7 @@ public class GlobalException{
         //This ValidationException has the custom error msg that has to be displayed in the UI
         public ResponseEntity<String> handleValidationException(ValidationException ex){
              //@ResponseBody convertsd java objects to json to display the response to client
-              return new ResponseEntity<String>("Validation Error",ex.getMessage(),HttpStatus.BAD_GATEWAY);
+              return new ResponseEntity<String>(ex.getMessage(),HttpStatus.BAD_GATEWAY);
               //Which msg to display , which statuscode to display?
         
     }
