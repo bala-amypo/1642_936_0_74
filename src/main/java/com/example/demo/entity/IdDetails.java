@@ -8,5 +8,6 @@ public class StudentDetails{
     @GeneratedValue(GenerationType.IDENTITY)
     private int id;
     private int cardNo;
+    private int student_id;
 
 }
