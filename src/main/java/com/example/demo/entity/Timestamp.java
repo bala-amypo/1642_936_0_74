@@ -13,6 +13,7 @@ import jakarta.persistence.PrePersist;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+
 public class Timestamp{
      @Id
    @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -22,6 +23,12 @@ public class Timestamp{
    private String email;
    LocalDateTime createAt;
    LocalDateTime updateAt;
+   
+   @PrePersist
+   public void onCreate(){
+    LocalDateTime now=new LocalDateTme()
+    //to capture time of java obj creation
+   }
 
 
 }
